@@ -48,12 +48,15 @@ def main():
                 # )
                 result_user = result[0]['name']
                 print(result_user)
-                to_go = requests.post('https://tizimswag.astrolab.uz/v1/daily', json=result_user)
+                data_json = {
+                    'id': result_user
+                }
+                to_go = requests.post('https://tizimswag.astrolab.uz/v1/daily', json=data_json)
                 print(f"Status: {to_go.status_code}")
                 print("Amal bajarildi!")
 
             old_result = result[0]["time"]
-        # print('bitta malumot keldi')
+        print('bitta malumot keldi')
         time.sleep(5)
 
 
