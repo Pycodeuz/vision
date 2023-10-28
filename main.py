@@ -53,7 +53,7 @@ def main():
                 print("Amal bajarildi!")
 
             old_result = result[0]["time"]
-        print('bitta malumot keldi')
+        # print('bitta malumot keldi')
         time.sleep(5)
 
 
