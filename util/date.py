@@ -7,8 +7,7 @@ def response_dates(response):
         return []
 
     info_list = data["AcsEvent"].get("InfoList", [])
-    filtered_data = [info for info in info_list if len(info.keys()) == 14]
-
+    filtered_data = [info for info in info_list if len(info.keys()) == 13]
     return filtered_data
 
 
