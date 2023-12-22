@@ -5,7 +5,7 @@ import requests
 from util.date import start_time, end_time, response_dates
 from util.send_request import send_request
 
-url = "http://212.115.112.48:80/ISAPI/AccessControl/AcsEvent?format=json"
+url = "http://192.168.0.100/ISAPI/AccessControl/AcsEvent?format=json"
 username = "admin"
 password = "Parol0212"
 
@@ -57,7 +57,7 @@ def main():
                 print("Amal bajarildi!")
 
             old_result = result[0]["time"]
-        print('bitta malumot keldi')
+        print('malumot keldi')
         time.sleep(1)
 
 
