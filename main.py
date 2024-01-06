@@ -5,7 +5,7 @@ import requests
 from util.date import start_time, end_time, response_dates
 from util.send_request import send_request
 
-url = "http://192.168.0.100/ISAPI/AccessControl/AcsEvent?format=json"
+url = "http://192.168.1.114:80/ISAPI/AccessControl/AcsEvent?format=json"
 username = "admin"
 password = "Parol0212"
 
